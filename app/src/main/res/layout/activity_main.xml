@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Prova"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/nome" />
+
+        <CheckBox
+            android:id="@+id/cbPatentato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patentato" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbUomo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uomo" />
+
+            <RadioButton
+                android:id="@+id/rbDonna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donna" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etdDataNascita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:text="gg_mm_aaaa"
+            tools:text="@tools:sample/date/ddmmyy[0]" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aggiungi" />
+
+        <ListView
+            android:id="@+id/lvElenco"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
